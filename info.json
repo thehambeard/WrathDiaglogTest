@@ -1,10 +1,11 @@
 {
-    "Id": "DialogTest",
-    "DisplayName": "Dialog Test",
-    "Author": "Hambeard",
-    "Version": "1.0.0",
-    "ManagerVersion": "0.23.4",
-    "Requirements": [],
-    "AssemblyName": "DialogTest.dll",
-    "EntryMethod": "DialogTest.Main.Load"
+  "Id": "DialogTest",
+  "DisplayName": "Dialog Test",
+  "Author": "Hambeard",
+  "Version": "2.0.0",
+  "ManagerVersion": "0.23.4",
+  "Requirements": [],
+  "AssemblyName": "DialogTest.dll",
+  "EntryMethod": "DialogTest.Main.Load",
+  "LoadAfter": [ "MewsiferConsole.Mod" ]
 }

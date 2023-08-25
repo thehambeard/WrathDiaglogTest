@@ -1,7 +1,4 @@
 ﻿using HarmonyLib;
-using Kingmaker;
-using Kingmaker.Blueprints;
-using UnityEngine;
 using UnityModManagerNet;
 
 namespace DialogTest
@@ -33,10 +30,7 @@ namespace DialogTest
 
         static void OnGUI(UnityModManager.ModEntry modEntry)
         {
-            if (GUILayout.Button("test"))
-            {
-                Game.Instance.EntityCreator.SpawnUnit(ResourcesLibrary.TryGetBlueprint<BlueprintUnit>("7001e2a58c9e86e43b679eda8a59f12f"), Game.Instance.Player.MainCharacter.Value.Position, Quaternion.identity, Game.Instance.CurrentScene.MainState);
-            }
+
         }
     }
 }
