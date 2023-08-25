@@ -1,6 +1,5 @@
-﻿using System.Diagnostics;
-using System;
-using UnityModManagerNet;
+﻿using System;
+using System.Diagnostics;
 
 namespace DialogTest.Utilities
 {
