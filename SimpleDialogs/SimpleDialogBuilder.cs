@@ -49,7 +49,7 @@ namespace DialogTest.SimpleDialogs
             return answer.ToReference<BlueprintAnswerBaseReference>();
         }
 
-        public static BlueprintCueBaseReference CreateCue(string name, string guid, BlueprintUnitReference speaker, string text, List<BlueprintAnswerBaseReference> answerList)
+        public static BlueprintCueBaseReference CreateCue(string name, string guid, BlueprintUnitReference speaker, string text, List<BlueprintAnswerBaseReference> answerList = null, CueSelection cueSelection = null)
         {
             var cue = CreateAndAdd<BlueprintCue>(name, guid);
             cue.Text = GameStrings.CreateString(name, text);
@@ -61,6 +61,7 @@ namespace DialogTest.SimpleDialogs
             };
 
             cue.Answers = answerList;
+            cue.Continue = cueSelection;
 
             if (cue.Text is null)
                 cue.Text = Empties.String;
@@ -68,12 +69,13 @@ namespace DialogTest.SimpleDialogs
                 cue.Speaker = Empties.DialogSpeaker;
             if (cue.Answers is null)
                 cue.Answers = new();
+            if (cue.Continue is null) 
+                cue.Continue = new();
 
             cue.Conditions = Empties.Conditions;
             cue.m_Listener = Activator.CreateInstance<BlueprintUnitReference>();
             cue.OnShow = Empties.Actions;
             cue.OnStop = Empties.Actions;
-            cue.Continue = Empties.CueSelection;
 
             return cue.ToReference<BlueprintCueBaseReference>();
         }
