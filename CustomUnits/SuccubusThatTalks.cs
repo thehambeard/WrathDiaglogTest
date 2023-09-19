@@ -107,9 +107,9 @@ namespace DialogTest.CustomUnits
                                                 })
                                         }),
                                     SimpleDialogBuilder.CreateAnswer(
-                                        name : "simpledialog.succubus.greet.answer.bad", 
-                                        guid : "C343C70D-C063-4B43-A131-F0065AC8466A", 
-                                        text: "I liked you better when you couldn't talk.", 
+                                        name : "simpledialog.succubus.greet.answer.bad",
+                                        guid : "C343C70D-C063-4B43-A131-F0065AC8466A",
+                                        text: "I liked you better when you couldn't talk.",
                                         nextCues: new()
                                         {
                                             SimpleDialogBuilder.CreateCue(

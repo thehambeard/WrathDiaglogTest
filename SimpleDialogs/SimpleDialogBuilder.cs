@@ -69,7 +69,7 @@ namespace DialogTest.SimpleDialogs
                 cue.Speaker = Empties.DialogSpeaker;
             if (cue.Answers is null)
                 cue.Answers = new();
-            if (cue.Continue is null) 
+            if (cue.Continue is null)
                 cue.Continue = new();
 
             cue.Conditions = Empties.Conditions;
